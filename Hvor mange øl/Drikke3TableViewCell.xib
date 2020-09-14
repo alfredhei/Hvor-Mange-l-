@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Drikke3TableViewCell" rowHeight="199" id="7zh-Hv-r1k" customClass="Drikke3TableViewCell" customModule="Hvor_mange_øl" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="255"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7zh-Hv-r1k" id="QqM-LK-AuP">
+                <rect key="frame" x="0.0" y="0.0" width="330" height="255"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="u3o-Dh-9KJ" customClass="slider" customModule="Hvor_mange_øl" customModuleProvider="target">
+                        <rect key="frame" x="14" y="163" width="154" height="69"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="minimumTrackTintColor" red="0.97647058819999999" green="0.74117647060000003" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="thumbTintColor" red="0.97647058819999999" green="0.74117647060000003" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="slider2:" destination="7zh-Hv-r1k" eventType="valueChanged" id="5hx-z9-mye"/>
+                        </connections>
+                    </slider>
+                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="eg8-G2-2Ko" customClass="slider" customModule="Hvor_mange_øl" customModuleProvider="target">
+                        <rect key="frame" x="14" y="87" width="154" height="69"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="minimumTrackTintColor" red="0.97647058819999999" green="0.74117647060000003" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="thumbTintColor" red="0.97647058819999999" green="0.74117647060000003" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="slider:" destination="7zh-Hv-r1k" eventType="valueChanged" id="eGj-5o-2jf"/>
+                        </connections>
+                    </slider>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Promillekalkulator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nre-D0-5cs">
+                        <rect key="frame" x="16" y="26" width="195" height="28"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vekt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xb3-GL-2kW">
+                        <rect key="frame" x="12" y="146" width="159" height="34"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.97647058819999999" green="0.74117647060000003" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <size key="shadowOffset" width="-1" height="0.0"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="up.png" translatesAutoresizingMaskIntoConstraints="NO" id="FXQ-H3-2cV">
+                        <rect key="frame" x="148" y="240" width="34" height="11"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" alpha="0.30000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down image.png" translatesAutoresizingMaskIntoConstraints="NO" id="8nT-C7-aUE">
+                        <rect key="frame" x="148" y="54" width="34" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="34" id="BUA-UY-bZv"/>
+                            <constraint firstAttribute="height" constant="11" id="GMw-x5-209"/>
+                        </constraints>
+                    </imageView>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LPu-mm-ZLc">
+                        <rect key="frame" x="189" y="80" width="121" height="101"/>
+                        <color key="backgroundColor" red="0.98228579760000001" green="0.74565875530000003" blue="0.1619240046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="7Gt-Ga-cYj"/>
+                        </constraints>
+                        <segments>
+                            <segment title="Mann"/>
+                            <segment title="Kvinne"/>
+                        </segments>
+                        <connections>
+                            <action selector="kjonnC:" destination="7zh-Hv-r1k" eventType="valueChanged" id="zyh-uX-BSo"/>
+                        </connections>
+                    </segmentedControl>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIy-Pa-ct0">
+                        <rect key="frame" x="189" y="197" width="121" height="47"/>
+                        <color key="backgroundColor" red="0.98228579760000001" green="0.74565875530000003" blue="0.1619240046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="121" id="DHX-uN-EUA"/>
+                            <constraint firstAttribute="height" constant="47" id="cW2-mR-Ujg"/>
+                        </constraints>
+                        <state key="normal" title="Bekreft">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="bekreftBtn:" destination="7zh-Hv-r1k" eventType="touchUpInside" id="JRy-6v-0RJ"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer drukket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAT-bl-Xgf">
+                        <rect key="frame" x="12" y="80" width="165" height="27.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="165" id="qel-FK-wTo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" red="0.97647058819999999" green="0.74117647060000003" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <size key="shadowOffset" width="-1" height="0.0"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="CIy-Pa-ct0" firstAttribute="top" secondItem="LPu-mm-ZLc" secondAttribute="bottom" constant="17" id="J4m-at-URj"/>
+                    <constraint firstAttribute="trailing" secondItem="LPu-mm-ZLc" secondAttribute="trailing" constant="20" id="Ker-mL-RtF"/>
+                    <constraint firstItem="8nT-C7-aUE" firstAttribute="top" secondItem="nre-D0-5cs" secondAttribute="bottom" id="L9e-qJ-TXY"/>
+                    <constraint firstItem="LPu-mm-ZLc" firstAttribute="top" secondItem="8nT-C7-aUE" secondAttribute="bottom" constant="15" id="SbO-14-oX5"/>
+                    <constraint firstItem="iAT-bl-Xgf" firstAttribute="top" secondItem="nre-D0-5cs" secondAttribute="bottom" constant="26" id="VQy-YR-Quo"/>
+                    <constraint firstItem="CIy-Pa-ct0" firstAttribute="width" secondItem="LPu-mm-ZLc" secondAttribute="width" id="ZKK-XC-vy5"/>
+                    <constraint firstItem="8nT-C7-aUE" firstAttribute="centerX" secondItem="QqM-LK-AuP" secondAttribute="centerX" id="cHA-Pz-t2T"/>
+                    <constraint firstItem="nre-D0-5cs" firstAttribute="leading" secondItem="QqM-LK-AuP" secondAttribute="leading" constant="16" id="p7X-bb-Bi4"/>
+                    <constraint firstItem="iAT-bl-Xgf" firstAttribute="leading" secondItem="QqM-LK-AuP" secondAttribute="leading" constant="12" id="pmL-tA-EAL"/>
+                    <constraint firstItem="CIy-Pa-ct0" firstAttribute="centerX" secondItem="LPu-mm-ZLc" secondAttribute="centerX" id="wvp-Jc-1VS"/>
+                    <constraint firstItem="nre-D0-5cs" firstAttribute="top" secondItem="QqM-LK-AuP" secondAttribute="top" constant="26" id="zuv-bo-9VL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="xLe-oQ-aaZ"/>
+            <connections>
+                <outlet property="bekreftBtnO" destination="CIy-Pa-ct0" id="juF-a8-ZQX"/>
+                <outlet property="downimg" destination="8nT-C7-aUE" id="Cfj-l0-lV7"/>
+                <outlet property="hLbl" destination="iAT-bl-Xgf" id="rQv-bn-33P"/>
+                <outlet property="hSldr" destination="eg8-G2-2Ko" id="3Cn-lK-MbA"/>
+                <outlet property="idLbl" destination="nre-D0-5cs" id="T4Z-iH-K5I"/>
+                <outlet property="kjonn" destination="LPu-mm-ZLc" id="0JY-qQ-k3u"/>
+                <outlet property="upimg" destination="FXQ-H3-2cV" id="dnZ-SZ-UJY"/>
+                <outlet property="vLbl" destination="Xb3-GL-2kW" id="Tn8-cA-eYV"/>
+                <outlet property="vSldr" destination="u3o-Dh-9KJ" id="Rxh-lC-vBp"/>
+            </connections>
+            <point key="canvasLocation" x="144.92753623188406" y="199.88839285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down image.png" width="200" height="86"/>
+        <image name="up.png" width="200" height="86"/>
+    </resources>
+</document>
