@@ -1,5 +1,5 @@
 # Hvor Mange Øl?
-En iOS app skrevet i Swift 
+iOS app skrevet i Swift 
 
 Regner om enheter av alkohol til halvlitere
 
